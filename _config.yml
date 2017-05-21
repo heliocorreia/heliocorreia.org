@@ -23,6 +23,9 @@ layout:      default
 theme:       jekyll-theme-hyde
 paginate:    5
 
+plugins_dir:
+  - jekyll-youtube
+
 # Build settings
 markdown: kramdown
 gems:

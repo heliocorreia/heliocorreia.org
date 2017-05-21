@@ -6,5 +6,6 @@ gem "github-pages", group: :jekyll_plugins
 gem "jekyll-theme-hyde", "~> 2.0.0"
 
 group :jekyll_plugins do
-   gem "jekyll-feed", "~> 0.6"
+    gem "jekyll-youtube"
+    gem "jekyll-feed", "~> 0.6"
 end
