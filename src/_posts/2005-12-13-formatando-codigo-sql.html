@@ -21,10 +21,10 @@ comments:
 ---
 <p>Padronizar pode ser um saco, mas &eacute; necess&aacute;rio. Formatar corretamente um comando SQL pode poupar v&aacute;rios minutos, ou horas, para entender ao que ele se prop&otilde;e. O <a href="http:&#47;&#47;awads.net&#47;">Eddie Awad</a>, em seu <a href="http:&#47;&#47;awads.net&#47;wp&#47;2005&#47;12&#47;12&#47;format-your-sql-the-easy-way&#47;">blog</a>, traz uma dica bem interessante, ao indicar ferramentas que automatizam o processo de formata&ccedil;&atilde;o do c&oacute;digo SQL:</p>
 <ul>
-<li><a href="http:&#47;&#47;www.sqlinform.com&#47;">SQLinForm</a>. Atrav&eacute;s de um <em>applet Java<&#47;em>, oferece in&uacute;meras funcionalidades.<&#47;li>
-<li><a href="http:&#47;&#47;www.wangz.net&#47;cgi-bin&#47;pp&#47;gsqlparser&#47;sqlpp&#47;sqlformat.tpl">Online SQL Formatter</a>. Ferramenta online, sem <em>applet Java<&#47;em>.<&#47;li>
-<li><a href="http:&#47;&#47;www.dbainfopower.com&#47;dbaip_SQLreview.php">SQL Review</a>. Ideal para ambientes sem conex&atilde;o com a Internet, necessita instala&ccedil;&atilde;o<&#47;li><br />
-<&#47;ul><br />
+<li><a href="http:&#47;&#47;www.sqlinform.com&#47;">SQLinForm</a>. Atrav&eacute;s de um <em>applet Java</em>, oferece in&uacute;meras funcionalidades.</li>
+<li><a href="http:&#47;&#47;www.wangz.net&#47;cgi-bin&#47;pp&#47;gsqlparser&#47;sqlpp&#47;sqlformat.tpl">Online SQL Formatter</a>. Ferramenta online, sem <em>applet Java</em>.</li>
+<li><a href="http:&#47;&#47;www.dbainfopower.com&#47;dbaip_SQLreview.php">SQL Review</a>. Ideal para ambientes sem conex&atilde;o com a Internet, necessita instala&ccedil;&atilde;o</li><br />
+</ul><br />
 As ferramentas n&atilde;o s&oacute; organizam, mas tamb&eacute;m exportam o formato at&eacute; para linguagens de programa&ccedil;&atilde;o, como: PHP, Java e Delphi. Que tal um exemplo? Copie o exemplo abaixo e teste voc&ecirc; mesmo.</p>
 <blockquote><p>select i.obj#,i.ts#,i.file#,i.block#,i.intcols,i.t<br />
 ype#,i.flags,i.property,i.pctfree$,i.initrans,i.ma<br />
@@ -41,5 +41,5 @@ n(cols) unicols,min(to_number(bitand(defer,1))) de<br />
 ferrable#,min(to_number(bitand(defer,4))) valid# f<br />
 rom cdef$ where obj#=:1 and enabled > 1 group by e<br />
 nabled) c where i.obj#=c.enabled(+) and i.obj# = i<br />
-st.obj#(+) and i.bo#=:1 order by i.obj#<&#47;blockquote><br />
+st.obj#(+) and i.bo#=:1 order by i.obj#</blockquote><br />
 Se n&atilde;o funcionou de primeira, revise as op&ccedil;&otilde;es. Muito &uacute;til para qualquer programador, ou DBA.</p>
