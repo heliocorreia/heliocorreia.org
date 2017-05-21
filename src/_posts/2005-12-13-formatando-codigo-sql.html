@@ -1,0 +1,45 @@
+---
+layout: post
+status: publish
+published: true
+title: Formatando c&oacute;digo SQL
+date: '2005-12-13 11:03:02 -0200'
+date_gmt: '2005-12-13 14:03:02 -0200'
+categories:
+- Geral
+tags: []
+comments:
+- id: 9
+  author: Oracle Raptor | H&eacute;lio Correia
+  author_email: ''
+  author_url: http://heliocorreia.wordpress.com/2006/01/04/oracle-raptor/
+  date: '2011-02-16 21:43:26 -0200'
+  date_gmt: '2011-02-17 00:43:26 -0200'
+  content: "[...] comuns a um cliente de acesso, o Raptor oferece ainda a op&ccedil;&atilde;o
+    de formata&ccedil;&atilde;o do c&oacute;digo SQL. Outras ferramentas o fazem,
+    mas de maneira muito [...]"
+---
+<p>Padronizar pode ser um saco, mas &eacute; necess&aacute;rio. Formatar corretamente um comando SQL pode poupar v&aacute;rios minutos, ou horas, para entender ao que ele se prop&otilde;e. O <a href="http:&#47;&#47;awads.net&#47;">Eddie Awad</a>, em seu <a href="http:&#47;&#47;awads.net&#47;wp&#47;2005&#47;12&#47;12&#47;format-your-sql-the-easy-way&#47;">blog</a>, traz uma dica bem interessante, ao indicar ferramentas que automatizam o processo de formata&ccedil;&atilde;o do c&oacute;digo SQL:</p>
+<ul>
+<li><a href="http:&#47;&#47;www.sqlinform.com&#47;">SQLinForm</a>. Atrav&eacute;s de um <em>applet Java<&#47;em>, oferece in&uacute;meras funcionalidades.<&#47;li>
+<li><a href="http:&#47;&#47;www.wangz.net&#47;cgi-bin&#47;pp&#47;gsqlparser&#47;sqlpp&#47;sqlformat.tpl">Online SQL Formatter</a>. Ferramenta online, sem <em>applet Java<&#47;em>.<&#47;li>
+<li><a href="http:&#47;&#47;www.dbainfopower.com&#47;dbaip_SQLreview.php">SQL Review</a>. Ideal para ambientes sem conex&atilde;o com a Internet, necessita instala&ccedil;&atilde;o<&#47;li><br />
+<&#47;ul><br />
+As ferramentas n&atilde;o s&oacute; organizam, mas tamb&eacute;m exportam o formato at&eacute; para linguagens de programa&ccedil;&atilde;o, como: PHP, Java e Delphi. Que tal um exemplo? Copie o exemplo abaixo e teste voc&ecirc; mesmo.</p>
+<blockquote><p>select i.obj#,i.ts#,i.file#,i.block#,i.intcols,i.t<br />
+ype#,i.flags,i.property,i.pctfree$,i.initrans,i.ma<br />
+xtrans,i.blevel,i.leafcnt,i.distkey,i.lblkkey,i.db<br />
+lkkey,i.clufac,i.cols,i.analyzetime,i.samplesize,i<br />
+.dataobj#,nvl(i.degree,1),nvl(i.instances,1),i.row<br />
+cnt,mod(i.pctthres$,256),i.indmethod#,i.trunccnt,n<br />
+vl(c.unicols,0),nvl(c.deferrable#+c.valid#,0),nvl(<br />
+i.spare1,i.intcols),i.spare4,i.spare2,i.spare6,dec<br />
+ode(i.pctthres$,null,null,mod(trunc(i.pctthres$&#47;25<br />
+6),256)),ist.cachedblk,ist.cachehit,ist.logicalrea<br />
+d from ind$ i, ind_stats$ ist, (select enabled, mi<br />
+n(cols) unicols,min(to_number(bitand(defer,1))) de<br />
+ferrable#,min(to_number(bitand(defer,4))) valid# f<br />
+rom cdef$ where obj#=:1 and enabled > 1 group by e<br />
+nabled) c where i.obj#=c.enabled(+) and i.obj# = i<br />
+st.obj#(+) and i.bo#=:1 order by i.obj#<&#47;blockquote><br />
+Se n&atilde;o funcionou de primeira, revise as op&ccedil;&otilde;es. Muito &uacute;til para qualquer programador, ou DBA.</p>

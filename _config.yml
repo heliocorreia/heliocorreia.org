@@ -1,0 +1,39 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+source:      src
+destination: bin
+safe:        false
+timezone:    America/Sao_Paulo
+encoding:    utf-8
+
+# Site settings
+title:       "Hélio Correia"
+tagline:     "Continue a nadar!"
+# baseurl:     "/"
+# url:         "http://127.0.0.1:4000/"
+layout:      default
+theme:       jekyll-theme-hyde
+paginate:    5
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+strict_front_matter: true
+
+# Front Matter settings
+permalink: /:year/:month/:day/:title.html
+
+# Serve settings
+detach: false
