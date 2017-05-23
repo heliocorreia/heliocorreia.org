@@ -10,15 +10,15 @@ categories:
 tags: []
 comments: []
 ---
-<p>Se quer fazer algo, ent&atilde;o fa&ccedil;a direito, oras! O jornal <a href="http:&#47;&#47;oglobo.globo.com&#47;">O Globo</a> tenta bloquear a c&oacute;pia as not&iacute;cias de seu site atrav&eacute;s de Javascript e CSS. Para quem usa <a href="http:&#47;&#47;br.mozdev.org&#47;firefox&#47;">Firefox</a> e tem a extens&atilde;o <a href="http:&#47;&#47;greasemonkey.mozdev.org&#47;">GreaseMonkey</a> instalada, &eacute; f&aacute;cil f&aacute;cil acabar com esta "prote&ccedil;&atilde;o".</p>
+<p>Se quer fazer algo, ent&atilde;o fa&ccedil;a direito, oras! O jornal <a href="http://oglobo.globo.com/">O Globo</a> tenta bloquear a c&oacute;pia as not&iacute;cias de seu site atrav&eacute;s de Javascript e CSS. Para quem usa <a href="http://br.mozdev.org/firefox/">Firefox</a> e tem a extens&atilde;o <a href="http://greasemonkey.mozdev.org/">GreaseMonkey</a> instalada, &eacute; f&aacute;cil f&aacute;cil acabar com esta "prote&ccedil;&atilde;o".</p>
 <p>Segue o script:</p>
-<blockquote><p><i><strike>&#47;&#47; ==UserScript==<br />
-&#47;&#47; @name OGlobo Content Unlocker<br />
-&#47;&#47; @author          Helio Correia<br />
-&#47;&#47; @namespace       http:&#47;&#47;heliocorreia.org<br />
-&#47;&#47; @description     Permitir que o conte&uacute;do do site possa ser selecionado<br />
-&#47;&#47; @include         http:&#47;&#47;oglobo.globo.com&#47;*<br />
-&#47;&#47; ==&#47;UserScript==(function() {<br />
+<blockquote><p><i><strike>// ==UserScript==<br />
+// @name OGlobo Content Unlocker<br />
+// @author          Helio Correia<br />
+// @namespace       http://heliocorreia.org<br />
+// @description     Permitir que o conte&uacute;do do site possa ser selecionado<br />
+// @include         http://oglobo.globo.com/*<br />
+// ==/UserScript==(function() {<br />
 var css = document.createElement('style');<br />
 var rule = document.createTextNode('*, div, p { -moz-user-select: text !important; }');<br />
 css.appendChild(rule);<br />
@@ -26,23 +26,23 @@ document.getElementsByTagName('body')[0].appendChild(css);<br />
 })();</strike> </i></blockquote><br />
 <b>Veja mais</b></p>
 <ul>
-<li><a href="http:&#47;&#47;www.extensoes.org&#47;node&#47;132">Como instalar  o Greasemonkey no Firefox</a></li>
-<li><a href="http:&#47;&#47;brunotorres.net&#47;2005&#47;05&#47;11&#47;google-counter-greasemonkey">Google counter: meu primeiro script para o greasemonkey</a></li>
-<li><a href="http:&#47;&#47;dunck.us&#47;collab&#47;GreaseMonkeyUserScripts">Diret&oacute;rio com diversos scripts</a></li>
-<li><a href="http:&#47;&#47;mozfirefox.blogspot.com&#47;2006&#47;07&#47;scripts-para-greasemonkey.html">Scripts para Greasemonkey</a></li><br />
+<li><a href="http://www.extensoes.org/node/132">Como instalar  o Greasemonkey no Firefox</a></li>
+<li><a href="http://brunotorres.net/2005/05/11/google-counter-greasemonkey">Google counter: meu primeiro script para o greasemonkey</a></li>
+<li><a href="http://dunck.us/collab/GreaseMonkeyUserScripts">Diret&oacute;rio com diversos scripts</a></li>
+<li><a href="http://mozfirefox.blogspot.com/2006/07/scripts-para-greasemonkey.html">Scripts para Greasemonkey</a></li><br />
 </ul><br />
 <b>[UPDATE]</b></p>
 <p>Eu confesso, o c&oacute;digo acima est&aacute; um caos. Aqui vai a <b>vers&atilde;o 0.2</b> do script:</p>
-<blockquote><p><i>&#47;&#47; ==UserScript==<br />
-&#47;&#47; @name OGlobo Content Unlocker<br />
-&#47;&#47; @author          Helio Correia<br />
-&#47;&#47; @namespace       http:&#47;&#47;heliocorreia.org<br />
-&#47;&#47; @description     Permitir que o conte&uacute;do do site possa ser selecionado<br />
-&#47;&#47; @include         http:&#47;&#47;oglobo.globo.com&#47;*<br />
-&#47;&#47; ==&#47;UserScript==</i></p>
-<p><i>&#47;&#47; permite selecionar o texto<br />
+<blockquote><p><i>// ==UserScript==<br />
+// @name OGlobo Content Unlocker<br />
+// @author          Helio Correia<br />
+// @namespace       http://heliocorreia.org<br />
+// @description     Permitir que o conte&uacute;do do site possa ser selecionado<br />
+// @include         http://oglobo.globo.com/*<br />
+// ==/UserScript==</i></p>
+<p><i>// permite selecionar o texto<br />
 GM_addStyle("*, div, p { -moz-user-select: text !important; }");</i></p>
-<p><i>&#47;&#47; permite o "ctrl+c" ou "ctrl+a"<br />
+<p><i>// permite o "ctrl+c" ou "ctrl+a"<br />
 window.addEventListener("load", function(e) {<br />
 this.document.onkeypress = null;<br />
 }, false);</i></blockquote></p>

@@ -19,11 +19,11 @@ comments:
     de formata&ccedil;&atilde;o do c&oacute;digo SQL. Outras ferramentas o fazem,
     mas de maneira muito [...]"
 ---
-<p>Padronizar pode ser um saco, mas &eacute; necess&aacute;rio. Formatar corretamente um comando SQL pode poupar v&aacute;rios minutos, ou horas, para entender ao que ele se prop&otilde;e. O <a href="http:&#47;&#47;awads.net&#47;">Eddie Awad</a>, em seu <a href="http:&#47;&#47;awads.net&#47;wp&#47;2005&#47;12&#47;12&#47;format-your-sql-the-easy-way&#47;">blog</a>, traz uma dica bem interessante, ao indicar ferramentas que automatizam o processo de formata&ccedil;&atilde;o do c&oacute;digo SQL:</p>
+<p>Padronizar pode ser um saco, mas &eacute; necess&aacute;rio. Formatar corretamente um comando SQL pode poupar v&aacute;rios minutos, ou horas, para entender ao que ele se prop&otilde;e. O <a href="http://awads.net/">Eddie Awad</a>, em seu <a href="http://awads.net/wp/2005/12/12/format-your-sql-the-easy-way/">blog</a>, traz uma dica bem interessante, ao indicar ferramentas que automatizam o processo de formata&ccedil;&atilde;o do c&oacute;digo SQL:</p>
 <ul>
-<li><a href="http:&#47;&#47;www.sqlinform.com&#47;">SQLinForm</a>. Atrav&eacute;s de um <em>applet Java</em>, oferece in&uacute;meras funcionalidades.</li>
-<li><a href="http:&#47;&#47;www.wangz.net&#47;cgi-bin&#47;pp&#47;gsqlparser&#47;sqlpp&#47;sqlformat.tpl">Online SQL Formatter</a>. Ferramenta online, sem <em>applet Java</em>.</li>
-<li><a href="http:&#47;&#47;www.dbainfopower.com&#47;dbaip_SQLreview.php">SQL Review</a>. Ideal para ambientes sem conex&atilde;o com a Internet, necessita instala&ccedil;&atilde;o</li><br />
+<li><a href="http://www.sqlinform.com/">SQLinForm</a>. Atrav&eacute;s de um <em>applet Java</em>, oferece in&uacute;meras funcionalidades.</li>
+<li><a href="http://www.wangz.net/cgi-bin/pp/gsqlparser/sqlpp/sqlformat.tpl">Online SQL Formatter</a>. Ferramenta online, sem <em>applet Java</em>.</li>
+<li><a href="http://www.dbainfopower.com/dbaip_SQLreview.php">SQL Review</a>. Ideal para ambientes sem conex&atilde;o com a Internet, necessita instala&ccedil;&atilde;o</li><br />
 </ul><br />
 As ferramentas n&atilde;o s&oacute; organizam, mas tamb&eacute;m exportam o formato at&eacute; para linguagens de programa&ccedil;&atilde;o, como: PHP, Java e Delphi. Que tal um exemplo? Copie o exemplo abaixo e teste voc&ecirc; mesmo.</p>
 <blockquote><p>select i.obj#,i.ts#,i.file#,i.block#,i.intcols,i.t<br />
@@ -34,7 +34,7 @@ lkkey,i.clufac,i.cols,i.analyzetime,i.samplesize,i<br />
 cnt,mod(i.pctthres$,256),i.indmethod#,i.trunccnt,n<br />
 vl(c.unicols,0),nvl(c.deferrable#+c.valid#,0),nvl(<br />
 i.spare1,i.intcols),i.spare4,i.spare2,i.spare6,dec<br />
-ode(i.pctthres$,null,null,mod(trunc(i.pctthres$&#47;25<br />
+ode(i.pctthres$,null,null,mod(trunc(i.pctthres$/25<br />
 6),256)),ist.cachedblk,ist.cachehit,ist.logicalrea<br />
 d from ind$ i, ind_stats$ ist, (select enabled, mi<br />
 n(cols) unicols,min(to_number(bitand(defer,1))) de<br />
