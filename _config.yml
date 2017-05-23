@@ -21,9 +21,6 @@ layout:      default
 theme:       jekyll-theme-hyde
 paginate:    5
 
-gems:
-  - jekyll-youtube
-
 # Build settings
 markdown: kramdown
 gems:
