@@ -125,8 +125,6 @@ GEM
       jekyll (~> 3.3)
     jekyll-theme-hacker (0.0.4)
       jekyll (~> 3.3)
-    jekyll-theme-hyde (2.0.0)
-      jekyll (~> 3.3)
     jekyll-theme-leap-day (0.0.4)
       jekyll (~> 3.3)
     jekyll-theme-merlot (0.0.4)
@@ -197,7 +195,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
-  jekyll-theme-hyde (~> 2.0.0)
 
 RUBY VERSION
    ruby 2.3.1p112

@@ -18,7 +18,6 @@ tagline:     "Continue a nadar!"
 # baseurl:     "/"
 # url:         "http://127.0.0.1:4000/"
 layout:      default
-theme:       jekyll-theme-hyde
 paginate:    5
 
 # Build settings
